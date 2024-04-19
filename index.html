@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <title>Q4 Seatwork 2</title>
+   
+    <style>
+         body{
+        background-image: url('https://i.pinimg.com/564x/c8/30/17/c83017c255be137c08c568c3e284185a.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+        .container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.container .item {
+			background-color: #b9dff0;
+			width: 700px;
+			height: 500px;
+			margin: 10px auto;
+			padding: 10px;
+            border: 5px solid white;
+            border-style: dashed;
+     }
+     #text1{
+         color: white;
+         font-size: 60px;
+         font-family: Century Gothic;
+         font-style: italic;
+         letter-spacing: 10px;
+     }
+     #div1{
+         background-color: rgb(141, 201, 227);
+         border: 5px #51aed6;
+         border-style: double;
+     }
+    </style>
+</head>
+<body>
+<center>
+<div id="div1">
+<h1 id="text1"><i>Arithmetic</i></h1>
+</div>
+		<div class="container">
+			<div class="item">
+			<h4><i>Let's solve for the value of x and y</i></h4>
+
+<!--to enter the value of x and y-->
+<div class="col-md-6" id="box">
+    <form class="form-group">
+       
+        <label>Enter a value for x:</label>
+         <input type="number" class="form-control bg-info" id="numX">
+        
+        <label>Enter a value for y:</label>
+           <input type="number" class="form-control bg-info" id="numY">
+           
+          <details ontoggle="message()">
+          <summary>Click here</summary> 
+           <i>Click the buttons below to calculate.</i>
+           </details>
+        
+    </form>
+</div>
+<div class="col-md-6" id="box">
+    <form class="form-group">
+
+           <button class ="bg-info" type="submit" id="submit" onclick="multiply()">Product</button>
+           <br>
+           <br>
+           <button class ="bg-warning" type="submit" id="submit" onclick="exponentiation()">Exponent</button>
+           <br>
+           <br>
+           <button class ="bg-success" type="submit" id="submit" onclick="modulus()">Remainder</button>
+           <br>
+           <br>
+           <button class ="bg-danger" type="submit" id="submit" onclick="add()">Sum</button>
+        
+</form>
+</div>
+
+<!--to declare the product, remainder,sum, and exponent of x and y-->
+<script type="text/javascript">
+
+function multiply(){
+    var numX = document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var multiply = Number(numX) * Number(numY);
+
+    alert(multiply);
+}
+
+function add(){
+    var numX = document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var add = Number(numX) + Number(numY);
+
+    alert(add);
+}
+
+function modulus(){
+    var numX= document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var remainder = Number(numX) % Number(numY);
+
+    alert(remainder);
+}
+
+
+function exponentiation(){
+    var numX = document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var exponentiation= Number(numX) ** Number(numY);
+
+    alert(exponentiation);
+}
+
+
+</script>
+<img src="penguin.png" width="250" height="250">
+<br>
+<p>Sources:</p>
+<a href= "https://www.pinterest.ph/pin/45036065015973073/" target"_blank">Pinterest</a>
+<br>
+</body>
+</html>
+
+
+
+
+
+
+
+
